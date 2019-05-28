@@ -19,7 +19,8 @@ public:
     goal_ = goal; 
   }
   
-  const double GetTime(ProfilePoint current, ProfilePoint goal, bool use_max_velocity);
+  const double GetTime(bool use_max_velocity);
+  const double GetSetpoint(double time);
 
 private:
   ProfilePoint current_;
